@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+	<head>
+		<title>Happy valentine's ❤️</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+	</head>
+	<body>
+		<div class="page-wrap">
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="{% url 'index' %}" class="active"><span class="icon fa-home"></span></a></li>
+						<li><a href="{% url 'gallery' %}"><span class="icon fa-camera-retro"></span></a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+
+					<!-- Banner -->
+						<section id="banner">
+							<div class="inner">
+								<h1>Hey Mama</h1>
+								<div class="container-fluid">
+								<p class="text-center">
+									
+										I couldn't decide how we'd spend this day.<br> I know you're a busy woman and you probably won't have much time to spare but I hope this little gift makes you smile. I hope it'll always remind you of the time we've spent together over the years. Happy valentine's day...I love you ❤️
+									
+								</p>
+								</div>
+								<ul class="actions">
+									<li><a href="#galleries" class="button alt scrolly big">Continue</a></li>
+								</ul>
+							</div>
+						</section>
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+									<header class="special">
+										<h2>Memories...</h2>
+									</header>
+									<div class="content">
+										<div class="media">
+											<a href="{% static 'images/fulls/1.jpg' %}"><img src="{% static 'images/thumbs/1.jpg' %}" alt="" title="2019 - forever ❤️." /></a>
+										</div>
+										<div class="media">
+											<a href="{% static 'images/fulls/2.jpg' %}"><img src="{% static 'images/thumbs/2.jpg' %}" alt="" title="2019 - forever ❤️." /></a>
+										</div>
+										<div class="media">
+											<a href="{% static 'images/fulls/3.jpg' %}"><img src="{% static 'images/thumbs/3.jpg' %}" alt="" title="2019 - forever ❤️." /></a>
+										</div>
+										<div class="media">
+											<a href="{% static 'images/fulls/4.jpg' %}"><img src="{% static 'images/thumbs/4.jpg' %}" alt="" title="2019 - forever ❤️." /></a>
+										</div>
+										<div class="media">
+											<a href="{% static 'images/fulls/5.jpg' %}"><img src="{% static 'images/thumbs/5.jpg' %}" alt="" title="2019 - forever ❤️." /></a>
+										</div>
+										<div class="media">
+											<a href="{% static 'images/fulls/6.jpg' %}"><img src="{% static 'images/thumbs/6.jpg' %}" alt="" title="2019 - forever ❤️." /></a>
+										</div>
+										<div class="media">
+											<a href="{% static 'images/fulls/7.jpg' %}"><img src="{% static 'images/thumbs/7.jpg' %}" alt="" title="2019 - forever ❤️." /></a>
+										</div>
+										<div class="media">
+											<a href="{% static 'images/fulls/8.jpg' %}"><img src="{% static 'images/thumbs/8.jpg' %}" alt="" title="2019 - forever ❤️." /></a>
+										</div>
+									</div>
+									<footer>
+										<a href="{% url 'gallery' %}" class="button big">Full Gallery</a>
+									</footer>
+								</div>
+						</section>
+
+					<!-- Footer -->
+						<footer id="footer">
+							<div class="copyright">
+								&copy; Marvellous Chimaraoke {% now "Y" %}
+							</div>
+						</footer>
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.poptrox.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'assets/js/skel.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+
+	</body>
+</html>
